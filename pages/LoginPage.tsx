@@ -24,11 +24,11 @@ const ArrowLeftIcon: React.FC<{className?: string}> = ({ className = "w-4 h-4" }
     </svg>
 );
 
-const API_URL = '/api'; // Use proxy, or http://localhost:5000/api
+const API_URL = 'https://apils.manubanyuputih.id/api/'; // Use proxy, or http://localhost:5000/api
 
 export const LoginPage: React.FC = () => {
-    const [username, setUsername] = useState('admin');
-    const [password, setPassword] = useState('admin123');
+    const [username, setUsername] = useState('');
+    const [password, setPassword] = useState('');
     const [showPassword, setShowPassword] = useState(false);
     const [loading, setLoading] = useState(false);
     const navigate = useNavigate();

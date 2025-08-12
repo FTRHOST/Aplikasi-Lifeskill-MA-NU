@@ -1,7 +1,7 @@
 import { useState, useEffect, useCallback } from 'react';
 import type { Student } from '../types';
 
-const API_URL = '/api'; // Diatur untuk proxy, atau ganti dengan http://localhost:5000/api saat development
+const API_URL = 'https://apils.manubanyuputih.id/api/'; // Diatur untuk proxy, atau ganti dengan http://localhost:5000/api saat development
 
 const getToken = () => sessionStorage.getItem('token');
 
